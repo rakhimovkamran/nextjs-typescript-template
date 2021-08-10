@@ -7,12 +7,7 @@
 @layer base {
     html,
     body {
-        @apply font-regular text-base m-0 p-0 bg-gray-100;
-    }
-
-    input:focus + .input-placeholder,
-    input:not(:placeholder-shown) + .input-placeholder {
-        @apply -top-5 text-sm;
+        @apply m-0 p-0 bg-gray-100;
     }
 
     *:focus {
@@ -21,16 +16,5 @@
 
     button:disabled {
         cursor: default;
-    }
-
-    /* Input [number] arrows */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    input[type="number"] {
-        -moz-appearance: textfield;
     }
 }
